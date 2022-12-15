@@ -14,6 +14,7 @@ function Nav() {
                 </Link>
                 <Link to='/shoppingcart'>
                     <li>Cart</li>
+                    <div className='cartCount'>3</div>
                 </Link>
             </ul>
         </nav>
