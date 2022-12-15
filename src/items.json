@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Cool Item",
+        "price": 420.00,
+        "description": "Like a cucumber that has been put into a class of ice water."
+    },
+    {
+        "id": 2,
+        "name": "Nice Item",
+        "price": 69.69,
+        "description": "Nice nice nice nice nice nice nice nice."
+    },
+    {
+        "id": 3,
+        "name": "Cheap Item",
+        "price": 0.99,
+        "description": "Get a lot of these for the same price as something else."
+    },
+    {
+        "id": 4,
+        "name": "Mid Item",
+        "price": 5.55,
+        "description": "It will last you a little longer than the cheap item."
+    }
+]
