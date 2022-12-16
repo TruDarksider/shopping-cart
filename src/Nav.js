@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {useShoppingCart} from './App'
 
 function Nav() {
+    const {openCart, cartQuantity} = useShoppingCart();
     return (
         <nav>
             <h3>Test Shop</h3>
@@ -13,8 +15,8 @@ function Nav() {
                     <li>Shop</li>
                 </Link>
                 <Link to='/shoppingcart'>
-                    <li>Cart</li>
-                    <div className='cartCount'>3</div>
+                    <button onClick={openCart}>Cart</button>
+                    <div className='cartCount'>{cartQuantity}</div>
                 </Link>
             </ul>
         </nav>
