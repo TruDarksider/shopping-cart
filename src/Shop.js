@@ -1,11 +1,19 @@
 import items from './items.json'
+//import { useState, useEffect } from 'react';
 
 const Shop = (props) =>{
-    const { cartItems } = props;
+    const { cartActionHandler, cartItems } = props;
+    
 
-    const quantity = cartItems.reduce(
-        (quantity, item) => item.quantity + quantity, 0
-      );
+    function manualInputHandler(){
+        console.log('Logic for manual quantity input needs to be implemented')
+    }
+
+    function quantityInCart(itemId){
+        const itemInCart = cartItems.find(({id}) => id === itemId );
+        return itemInCart ? itemInCart.quantity : 0
+    }
+    //candles, heart not red book, leaf, orb, armor
     return (
         <div>
             <h1>I am Shop Page</h1>
@@ -14,20 +22,22 @@ const Shop = (props) =>{
                 return (
                     <div className="card">
                         <div className="cardHeader">
-                            <h3 key={item.id}>{item.name}</h3>
+                            <h3 name={item.id} key={item.id}>{item.name}</h3>
                             <span>${item.price}</span>
                         </div>
                         <p>{item.description}</p>
                         <div className="addToCart">
-                        {quantity === 0 ? (
-                            <button>+ Add To Cart</button>
+                        {quantityInCart(item.id) === 0 ? (
+                            <div>
+                                <button onClick={cartActionHandler}>+ Add To Cart</button>
+                            </div>
                         ) : 
                             (
                                 <div className='changeQuantity'>
-                                    <button>-</button>
-                                    <input type='number' value={quantity} />
-                                    <button>+</button>
-                                    <button>Remove</button>
+                                    <button onClick={cartActionHandler}>-</button>
+                                    <input type='number' value={quantityInCart(item.id)} onChange={manualInputHandler} />
+                                    <button onClick={cartActionHandler}>+</button>
+                                    <button onClick={cartActionHandler}>Remove</button>
                                 </div>
                             )
                         }
