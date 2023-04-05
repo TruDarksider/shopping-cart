@@ -13,7 +13,7 @@ const Shop = (props) =>{
         const itemInCart = cartItems.find(({id}) => id === itemId );
         return itemInCart ? itemInCart.quantity : 0
     }
-    //candles, heart not red book, leaf, orb, armor
+    
     return (
         <div>
             <h1>I am Shop Page</h1>
@@ -23,12 +23,12 @@ const Shop = (props) =>{
                     <div className="card">
                         <div className="cardHeader">
                             <h3 name={item.id} key={item.id}>{item.name}</h3>
-                            <span>${item.price}</span>
+                            <span>{item.price.toLocaleString('us-US', {style:'currency', currency:'USD'})}</span>
                         </div>
-                        <p>{item.description}</p>
+                        <p className='itemDesc'>{item.description}</p>
                         <div className="addToCart">
                         {quantityInCart(item.id) === 0 ? (
-                            <div>
+                            <div className='changeQuantity'>
                                 <button onClick={cartActionHandler}>+ Add To Cart</button>
                             </div>
                         ) : 

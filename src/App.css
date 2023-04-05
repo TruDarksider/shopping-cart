@@ -1,17 +1,19 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .card {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   width: clamp(50px, 20vw, 200px);
-  border: solid blue;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cardContainer {
   display: flex;
-  gap: 2px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* gap: 2px; */
   padding: 2vw;
   border: solid red;
 }
@@ -22,18 +24,28 @@
   justify-content: space-around;
 }
 
+.changeQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 input {
   width: 50px;
 }
 
-nav {
+.itemDesc {
+  text-align: center;
+}
+
+/* nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
   background: rgb(73, 79, 82);
   color: white;
-}
+} */
 
 .nav-links {
   width: 33%;
