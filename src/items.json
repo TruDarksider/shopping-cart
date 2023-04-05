@@ -1,30 +1,58 @@
 [
     {
         "id": 1,
-        "name": "Cool Item",
-        "price": 420.00,
-        "description": "Like a cucumber that has been put into a class of ice water.",
+        "name": "Math Test",
+        "price": 314.15,
+        "description": "Geometry and trigonometry. For those that know their area of expertise (namely geometry and trigonometry).",
         "quantity": 0
     },
     {
         "id": 2,
-        "name": "Nice Item",
-        "price": 69.69,
-        "description": "Nice nice nice nice nice nice nice nice.",
+        "name": "Literature Comprehension",
+        "price": 19.84,
+        "description": "A good read, but we want to make sure you didn't read TOO much into it.",
         "quantity": 2
     },
     {
         "id": 3,
-        "name": "Cheap Item",
-        "price": 0.99,
-        "description": "Get a lot of these for the same price as something else.",
+        "name": "College Exam",
+        "price": 24890.00,
+        "description": "All of the other tests in one place. Comes with a really nice paper certificate you can frame if you get a great score.",
         "quantity": 0
     },
     {
         "id": 4,
-        "name": "Mid Item",
-        "price": 5.55,
-        "description": "It will last you a little longer than the cheap item.",
+        "name": "Astronomy Test",
+        "price": 365.25,
+        "description": "Test must be completed within a year of purchase date.",
+        "quantity": 0
+    },
+    {
+        "id": 5,
+        "name": "Eye Exam",
+        "price": 20.20,
+        "description": "One or two? Two or three? Two or four?",
+        "quantity": 0
+    },
+    {
+        "id": 6,
+        "name": "Carbon Dating",
+        "price": 6.14,
+        "description": "Verify your age with a DNA kit sent to you. We will determine your age using radiocarbon. Must be younger than 50,000 years old.",
+        "quantity": 0
+    },
+    {
+        "id": 7,
+        "name": "Name that Song",
+        "price": 19.70,
+        "description": "Can you name all of these songs from the very popular genre known as disco?",
+        "quantity": 0
+    },
+    {
+        "id": 8,
+        "name": "Religious Recall",
+        "price": 7.77,
+        "description": "Now you really can be Holier than Thou who has not scored as well as thee.",
         "quantity": 0
     }
 ]
