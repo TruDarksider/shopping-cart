@@ -54,5 +54,19 @@
         "price": 7.77,
         "description": "Now you really can be Holier than Thou who has not scored as well as thee.",
         "quantity": 0
+    },
+    {
+        "id": 9,
+        "name": "Mic Test",
+        "price": 58.57,
+        "description": "Hollywood, if the microphone was JUST being used, it SHOULD NOT create feeback when the next person steps up to it.",
+        "quantity": 0
+    },
+    {
+        "id": 10,
+        "name": "Test Script",
+        "price": 101.01,
+        "description": "Hi, earth! [fail] Hi, planet! [fail] Hollow-een! [fail] Yellow, Bird [fail]...",
+        "quantity": 0
     }
 ]
