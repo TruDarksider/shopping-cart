@@ -16,7 +16,7 @@ const Shop = (props) =>{
     
     return (
         <div>
-            <h1>I am Shop Page</h1>
+            <h1>Test Shop Stock</h1>
             <div className="cardContainer">
             {items.map((item) => {
                 return (
@@ -37,7 +37,7 @@ const Shop = (props) =>{
                                     <button onClick={cartActionHandler}>-</button>
                                     <input type='number' value={quantityInCart(item.id)} onChange={manualInputHandler} />
                                     <button onClick={cartActionHandler}>+</button>
-                                    <button onClick={cartActionHandler}>Remove</button>
+                                    <button className='btnRemove' onClick={cartActionHandler}>Remove</button>
                                 </div>
                             )
                         }
