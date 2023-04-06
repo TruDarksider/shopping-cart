@@ -1,12 +1,11 @@
 const Home = () =>{
     return (
-        <div>
-            <h1>This is the Home Page</h1>
+        <div className='homeText'>
+            <h1>Test Shop</h1>
             <div>
-                <p>There's not really anything to look at here.</p>
-                <p>I could explain myself or shop...</p>
-                <p>But why bother! Just start clicking around.</p>
-                <p>Try "Shop" at the top and never click back here.</p>
+                <p>Hello? Is this thing on? Can everyone hear me?</p>
+                <p>Okay cool, seeing lots of nods... Hello Worl, er, welcome to the Test Shop!</p>
+                <p>Might I reccomend "Shop" at the top of the page?</p>
             </div>
         </div>
     )
