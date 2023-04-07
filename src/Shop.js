@@ -5,9 +5,9 @@ const Shop = (props) =>{
     const { cartActionHandler, cartItems } = props;
     
 
-    function manualInputHandler(){
+    /* function manualInputHandler(){
         console.log('Logic for manual quantity input needs to be implemented')
-    }
+    } */
 
     function quantityInCart(itemId){
         const itemInCart = cartItems.find(({id}) => id === itemId );
@@ -35,7 +35,8 @@ const Shop = (props) =>{
                             (
                                 <div className='changeQuantity'>
                                     <button onClick={cartActionHandler}>-</button>
-                                    <input type='number' value={quantityInCart(item.id)} onChange={manualInputHandler} />
+                                        {/* <input type='number' value={quantityInCart(item.id)} onChange={manualInputHandler} /> */}
+                                        <span className='quantity'>{quantityInCart(item.id)}</span>
                                     <button onClick={cartActionHandler}>+</button>
                                     <button className='btnRemove' onClick={cartActionHandler}>Remove</button>
                                 </div>
