@@ -7,12 +7,6 @@ import Shop from './Shop';
 import ShoppingCart from './ShoppingCart';
 import Footer from './Footer';
 
-/* Ways this can be better:
-Amount in cart only updates on decrements or +Add to cart (so not increase)
-There is no price total on cart (this is just another reduce function)
-*/
-
-//{id: 1, quantity: 0},{id: 2, quantity: 3},{id: 3, quantity: 2},{id: 4, quantity: 1}
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [item, setItem] = useState({});
@@ -28,18 +22,22 @@ function App() {
       setCartAction(e.target.textContent);
     }
 
-    function increaseItemQuantity(idToIncrease){
-      if(cartItems.length===0){setCartItems([{id: item.id, quantity: item.quantity+1}])}
-      for(let i=0;i<cartItems.length;i++){
-        if(!(cartItems.find(({id}) => id === item.id))){
-          setCartItems(cartItems.concat({id: item.id, quantity: item.quantity+1}));
+  function increaseItemQuantity(idToIncrease) {
+       setCartItems(currItems => {
+        if(!currItems.find(({id}) => id === idToIncrease)){
+          return currItems.concat({id: item.id, quantity: item.quantity+1})
+        } else {
+          return currItems.map(item => {
+            if (item.id === idToIncrease){
+              return {...item, quantity: item.quantity+1}
+            } else {
+              return item
+            }
+          })
         }
-        if (cartItems[i].id===item.id){
-          cartItems[i].quantity++
-        }
-      }
+      })
     }
-  
+
     function decreaseItemQuantity(idToIncrease){
        setCartItems(currItems => {
         if(currItems.find(({id}) => id === idToIncrease)?.quantity === 1){

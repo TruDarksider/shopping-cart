@@ -5,6 +5,8 @@
 .btnRemove {
   background-color: red;
   color: white;
+  position: relative;
+  left: 10%;
 }
 
 button {
@@ -72,6 +74,13 @@ input {
   align-items: center;
   list-style: none;
   text-decoration: none;
+}
+
+.quantity {
+  padding: 3px;
+  margin: 2px;
+  border: 1px black solid;
+  border-radius: 5px;
 }
 
 .shoppingCart {
