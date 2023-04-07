@@ -25,6 +25,7 @@ button {
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   justify-content: space-evenly;
   gap: 2vh;
   padding: 2vw;
@@ -47,6 +48,9 @@ button {
 }
 
 .homeText {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   text-align: center;
 }
 
@@ -84,6 +88,9 @@ input {
 }
 
 .shoppingCart {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   margin: 2vw;
 }
 

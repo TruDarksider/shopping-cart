@@ -5,7 +5,6 @@ import Nav from './Nav';
 import Home from './Home';
 import Shop from './Shop';
 import ShoppingCart from './ShoppingCart';
-import Footer from './Footer';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -66,7 +65,7 @@ function App() {
         case '+': increaseItemQuantity(itemId); break;
         case '-': decreaseItemQuantity(itemId); break;
         case '+ Add To Cart': increaseItemQuantity(itemId); break;
-        default: console.log('handleItemChange called with no matching case');
+        default: console.log('This message will display twice');
       }
     }
 
@@ -90,7 +89,6 @@ function App() {
           />} 
         />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

@@ -19,7 +19,7 @@ const ShoppingCart = (props) =>{
                     {cartItems.map((cartItem) => {
                         return (
                         <div className='cartItemDetails'>
-                            <h2 key={cartItem.id}>{matchIdtoItem(cartItem.id).name}</h2>
+                            <h3 key={cartItem.id}>{matchIdtoItem(cartItem.id).name}</h3>
                                 <div>{'Qty: ' + cartItem.quantity + ' at ' + matchIdtoItem(cartItem.id).price.toLocaleString('us-US', { style: 'currency', currency: 'USD' }) + '/ea'}
                                     <div className='subtotal'>
                                         <span>{(matchIdtoItem(cartItem.id).price * cartItem.quantity).toLocaleString('us-US', { style: 'currency', currency: 'USD' })}</span>
