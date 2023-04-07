@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Home from './Home';
 import Shop from './Shop';
 import ShoppingCart from './ShoppingCart';
+import Footer from './Footer';
 
 /* Ways this can be better:
 Amount in cart only updates on decrements or +Add to cart (so not increase)
@@ -91,6 +92,7 @@ function App() {
           />} 
         />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
