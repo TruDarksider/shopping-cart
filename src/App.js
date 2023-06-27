@@ -79,14 +79,19 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Nav cartItems={cartItems}/>
+      <Nav cartItems={cartItems} />
       <Routes>
-        <Route path='/' exact element={<Home />} />
-        <Route path='/shop' exact element={<Shop cartActionHandler={cartActionHandler} cartItems={cartItems} />} />
-        <Route path='/shoppingcart' element={
-          <ShoppingCart 
-            cartItems={cartItems}
-          />} 
+        <Route path="shopping-cart/" exact element={<Home />} />
+        <Route
+          path="shopping-cart/shop"
+          exact
+          element={
+            <Shop cartActionHandler={cartActionHandler} cartItems={cartItems} />
+          }
+        />
+        <Route
+          path="shopping-cart/shoppingcart"
+          element={<ShoppingCart cartItems={cartItems} />}
         />
       </Routes>
     </BrowserRouter>

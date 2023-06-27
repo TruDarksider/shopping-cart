@@ -9,21 +9,21 @@ function Nav(props) {
     
       return (
         <nav>
-            <h3>Test Shop</h3>
-            <ul className='nav-links'>
-                <Link to='/'>
-                    <li>Home</li>
-                </Link>
-                <Link to='/shop'>
-                    <li>Shop</li>
-                </Link>
-                <Link to='/shoppingcart'>
-                    <div>Cart</div>
-                    <div className='cartCount'>{quantity}</div>
-                </Link>
-            </ul>
+          <h3>Test Shop</h3>
+          <ul className="nav-links">
+            <Link to="shopping-cart/">
+              <li>Home</li>
+            </Link>
+            <Link to="shopping-cart/shop">
+              <li>Shop</li>
+            </Link>
+            <Link to="shopping-cart/shoppingcart">
+              <div>Cart</div>
+              <div className="cartCount">{quantity}</div>
+            </Link>
+          </ul>
         </nav>
-    );
+      );
 }
 
 export default Nav;
