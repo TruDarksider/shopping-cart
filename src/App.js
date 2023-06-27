@@ -65,7 +65,7 @@ function App() {
         case '+': increaseItemQuantity(itemId); break;
         case '-': decreaseItemQuantity(itemId); break;
         case '+ Add To Cart': increaseItemQuantity(itemId); break;
-        default: console.log('This message will display twice');
+        default: //console.log('This message will display twice');
       }
     }
 
